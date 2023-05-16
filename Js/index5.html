@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="form">
+      <div>
+        <input type="text" name="name" id="name" placeholder="Enter name" />
+        <p id="nameError"></p>
+      </div>
+      <div>
+        <input type="text" name="email" id="email" placeholder="Enter email" />
+        <p id="emailError"></p>
+      </div>
+      <div>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter password"
+        />
+        <p id="passwordError"></p>
+      </div>
+
+      <input type="submit" value="submit" />
+    </form>
+
+    <script>
+      const name = document.getElementById("name");
+      const email = document.getElementById("email");
+      const password = document.getElementById("password");
+      const form = document.getElementById("form");
+
+      const nameError = document.getElementById("nameError");
+      const emailError = document.getElementById("emailError");
+      const passwordError = document.getElementById("passwordError");
+
+      emailPattern = "/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/";
+      passwordPattern = "^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$";
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        if (name.value == "") {
+          nameError.innerText = "Name Cannot be empty!";
+        } else if (name.value.length <= 6) {
+          nameError.innerText = "Name must be greater than 6";
+        }
+
+        if (!email.value.match(emailPattern)) {
+          emailError.innerText = "The email Pattern is Invalid";
+        }
+        if (!password.value.match(passwordPattern)) {
+          passwordError.innerText = "The password Pattern is Invalid";
+        }
+      });
+    </script>
+  </body>
+</html>

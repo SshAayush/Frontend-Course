@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        width: 200px;
+        height: 40px;
+        border: none;
+        font-size: 20px;
+        border-radius: 20px;
+        /* cursor: -webkit-grab; */
+        margin: 2%;
+        transition: all 0.2s ease-in;
+      }
+      #btn1 {
+        background-color: aquamarine;
+        color: black;
+      }
+      #btn1:hover {
+        background-color: rgb(48, 196, 147);
+        color: black;
+        /* position: absolute; */
+        /* top: 10rem;
+        right: 5rem; */
+      }
+      #btn2 {
+        background-color: blueviolet;
+        color: white;
+      }
+      #btn2:hover {
+        transform: scale(1.2);
+      }
+      #btn3 {
+        border: 2px solid green;
+        background-color: white;
+        transition: all 0.2s ease;
+      }
+      #btn3:hover {
+        background-color: green;
+        color: white;
+        transition: all 0.2s ease;
+      }
+
+      #box1 {
+        width: 300px;
+        height: 150px;
+        background-color: cornflowerblue;
+        color: white;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5rem;
+        transform: scale(0.7); /*used to ++ or -- size*/
+      }
+      #box2 {
+        width: 300px;
+        height: 150px;
+        background-color: cornflowerblue;
+        color: white;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5rem;
+        transform: rotateY(20deg);
+        transition: all 2s ease-in-out;
+      }
+      #box2:hover {
+        transition: all 2s ease-in-out;
+        /* transform: rotateX(320deg); */
+        /* transform: translate(100px, 300px); */
+        transform: skew(50deg, 20deg);
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn1">Click Me!!</button>
+    <button id="btn2">Click Me!!</button>
+    <button id="btn3">Click Me!!</button>
+
+    <div id="box1">Box</div>
+    <div id="box2">Box</div>
+  </body>
+</html>

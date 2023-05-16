@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="boxOne">Hello World!</div>
+    <p id="paraOne">Text</p>
+    <div id="image-container">
+      <img src="" id="imageHolder" />
+    </div>
+    <button id="showBtn" onclick="showImage()">Show Image</button>
+
+    <script>
+      const boxOne = document.getElementById("boxOne");
+      console.log(boxOne.innerHTML); //captures the content of boxOne
+      boxOne.innerText = "Bye World!!"; //changes the content of boxOner
+
+      const paraOne = document.getElementById("paraOne");
+      paraOne.style.fontSize = "48px";
+      paraOne.style.color = "blue";
+
+      function showImage() {
+        const btn = document.getElementById("showBtn");
+        const imageHolder = document.getElementById("imageHolder");
+        if (btn.innerHTML == "Show Image") {
+          imageHolder.src =
+            "https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/342216402_551049997139683_6520089131014854382_n.jpg?stp=dst-jpg_p843x403&_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=Je1M0zFMn9AAX-2wkHN&_nc_ht=scontent.fktm3-1.fna&oh=00_AfBmyVOfep4UbJNbPPv0tqbZCNIdYIFDQp9UNfzSpvCQtw&oe=64475720";
+          btn.innerText = "Hide Image";
+        } else {
+          imageHolder.src = "";
+          btn.innerText = "Show Image";
+        }
+      }
+    </script>
+  </body>
+</html>

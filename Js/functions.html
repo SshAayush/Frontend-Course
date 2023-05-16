@@ -1,0 +1,52 @@
+<!DOCTYPE html
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        
+        <script>
+            function sayHello(){
+                console.log("Hello!")
+            }
+            // sayHello();
+
+            function sumOfArray(arr){
+                let sum = 0;
+                for(let i of arr){
+                    sum += i;
+                }
+                console.log(`The sum of array is ${sum}`);
+            }
+            let arr1=[1,2,3,4,5];
+            let arr2=[5,6,7,8,9];
+
+            // sumOfArray(arr1);
+            // sumOfArray(arr2);
+
+            const sumOfArray2 = (arr) =>{
+                let sum = 0;
+                for(let i of arr){
+                    sum += i;
+                }
+                console.log(`The sum of Array is ${sum}`)
+            };
+            // sumOfArray2(arr1)
+
+            function avgOfArray(arr){
+                let sum = 0;
+                for(let i of arr){
+                    sum += i
+                }
+                console.log(`The avg of Array is ${sum/arr.length}`)
+            }
+            avgOfArray(arr1)
+
+        </script>
+    </body>
+</html>

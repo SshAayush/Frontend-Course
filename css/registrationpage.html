@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-image: url(https://mcdn.wallpapersafari.com/medium/18/59/I5PMO3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      form {
+        background-color: rgba(126, 67, 67, 0.1);
+        width: 60%;
+        /* height: 60vh; */
+        /* border: 5px solid aqua; */
+        color: white;
+        padding: 1rem;
+        border-radius: 17px;
+        backdrop-filter: blur(10px);
+      }
+      .input_container input {
+        width: 100%;
+      }
+      .name_container input {
+        width: 48.202%;
+      }
+      .input_container input,
+      .name_container input {
+        padding: 0.7rem;
+        padding-left: 2rem;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        border: 1px solid white;
+      }
+      input::placeholder {
+        /* padding-left: 2rem; */
+        color: white;
+      }
+      h2,
+      p {
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+      .btn {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+      }
+      #submitBtn {
+        margin-top: 1rem;
+        width: 150px;
+        height: 40px;
+        border: 1px solid white;
+        background: transparent;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      /* .input_container i {
+        position: absolute;
+        top: 1rem;
+        left: 0.5rem;
+        font-size: 1.2repxm;
+      } */
+      .fa-user {
+        position: relative;
+        right: 0.1rem;
+        top: 1.8rem;
+        left: 0.5rem;
+      }
+      .fa-solid {
+        position: relative;
+        right: 0.1rem;
+        top: 1.8rem;
+        left: 0.5rem;
+      }
+      .fa-person {
+        position: relative;
+        right: 0.1rem;
+        top: 0.3rem;
+        left: 1.5rem;
+      }
+      @media (max-width: 900px) {
+        form {
+          width: 80%;
+        }
+        .agree label {
+          font-size: 0.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#">
+      <h2>Register</h2>
+      <p>Fill out this form</p>
+      <div class="name_container">
+        <!-- <i class="fa-solid fa-person fa-bounce"></i> -->
+        <input type="text" name="fname" id="fname" placeholder="First Name" />
+        <!-- <i class="fa-solid fa-person fa-bounce"></i> -->
+        <input type="text" name="lname" id="lname" placeholder="Last Name" />
+      </div>
+      <div class="input_container">
+        <i class="fa-solid fa-user"></i>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Username"
+        />
+      </div>
+      <div class="input_container">
+        <i class="fa-solid fa-envelope"></i>
+        <input type="email" name="email" id="email" placeholder="Email" />
+      </div>
+      <div class="input_container">
+        <i class="fa-solid fa-lock"></i>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="password"
+        />
+      </div>
+      <div class="agree">
+        <input type="checkbox" name="agree" id="agree" />
+        <label for="agree"
+          >I agree with the <b>Terms and Condition</b> and the
+          <b>Privacy Policy</b></label
+        >
+      </div>
+      <div class="btn">
+        <input type="submit" id="submitBtn" value="Create Account" />
+      </div>
+    </form>
+  </body>
+</html>

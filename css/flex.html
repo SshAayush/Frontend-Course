@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        color: wheat;
+      }
+      .parent {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 100vh;
+        /* justify-content: space-around; */
+      }
+      div {
+        margin: 1rem;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box1 {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+      }
+      .box2 {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+      }
+      .box3 {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="box1">Aayush</div>
+      <div class="box2">Timalsina</div>
+      <div class="box1">Aayush</div>
+      <div class="box2">Timalsina</div>
+      <div class="box1">Aayush</div>
+      <div class="box2">Timalsina</div>
+      <div class="box1">Aayush</div>
+      <div class="box2">Timalsina</div>
+      <div class="box1">Aayush</div>
+      <div class="box2">Timalsina</div>
+      <div class="box1">Aayush</div>
+      <div class="box3">
+        Timalsina dfghjgfcvbjuytfvbnjuytfvbnmjuytfvbnjytrfcv bnjuytfvb nmjhgfc
+        nhgfc nhg
+      </div>
+    </div>
+  </body>
+</html>
